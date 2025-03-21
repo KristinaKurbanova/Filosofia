@@ -1,0 +1,462 @@
+/********* Main settings *********/
+/********* Main settings *********/
+/********* Main settings *********/
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #BEB1F2;
+    color: black;
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    overflow-x: hidden;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    line-height: 140%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    cursor: url('images/Normal\ Select.cur'), auto;
+}
+
+
+
+
+/********* Section 1 / Header *********/
+/********* Section 1 / Header *********/
+/********* Section 1 / Header *********/
+
+
+.section-1 {
+    margin: 0;
+    display: flex;
+    padding: 80px 80px 120px 80px;
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
+    align-self: stretch;
+
+    border-radius: 0px 0px 80px 80px;
+    background: #FFF;
+}
+
+.logo {
+    width: 100%;
+    margin: 80;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    align-self: stretch;
+    text-align: right;
+}
+
+.logo-img {
+    height: 24px;
+    width: auto;
+
+}
+
+@media (max-width: 768px) {
+    .section-1 {
+        padding: 40px 80px 40px 80px;
+        gap: 40px;
+        border-radius: 60px;
+    }
+    .logo {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .logo-img {
+        height: 16px;
+        margin-bottom: 12px; 
+    }
+}
+
+/********* H1 *********/
+
+h1 {
+    color: #000;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120%; 
+
+    width: 100%;
+    max-width: 662px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+      font-size: 60px;
+    }}
+
+/********* Button *********/
+
+.button {
+    width: 100%;
+    max-width: 662px;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    padding: 12px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.2s ease 0.2s;
+ }
+    
+.button:hover {
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .button {
+      font-size: 22px;
+    }}
+
+
+
+
+
+
+/********* Section 2 *********/
+/********* Section 2 *********/
+/********* Section 2 *********/
+
+.section-2, .section-5 {
+    display: flex;
+    padding: 0px 80px;
+    justify-content: center;
+    gap: 40px;
+    align-self: stretch;
+}
+
+.section-2-content, .section-5-content {
+    display: flex;
+    align-items: stretch;
+    gap: 40px;
+    width: 100%;
+}
+
+/********* H2 *********/
+
+h2 {
+    align-self: stretch;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; 
+    margin: 0;
+}
+
+/********* Text *********/
+
+p {
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .section-2, .section-5 {
+        padding: 0px 40px;
+        gap: 20px;
+    }
+
+    .section-2-content, .section-5-content {
+        gap: 30px;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+      }
+    }   
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex: 2 1 auto;
+    padding: 40px;
+    gap: 30px;
+    max-width: 70%;
+
+    border-radius: 40px;
+    background: #FFF;
+}
+
+.section-2-img, .section-5-img {
+    display: flex;
+    flex: 1 2 auto; 
+    max-width: 500px;
+    min-width: 140px;
+    width: 100%;
+    height: 100%;
+    justify-content: center; 
+    align-items: flex-start; 
+    padding: 0 30px;
+    border-radius: 40px;
+    overflow: hidden;
+    background-color: #FFF;
+}
+
+.section-5-img {
+    align-items: flex-end;
+}
+
+
+.section-2-img img, .section-5-img img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 100%;
+}
+
+@media (max-width: 768px) {
+    .text-box {
+        padding: 30px;
+        gap: 30px;
+
+        border-radius: 30px;
+    }   
+
+    .section-2-img, .section-5-img {
+        border-radius: 30px;
+    }
+}
+
+
+
+
+/********* Section 3 *********/
+/********* Section 3 *********/
+/********* Section 3 *********/
+
+
+.section-3 {
+    display: flex;
+    padding: 0px 80px;
+    justify-content: center;
+    gap: 40px;
+    align-self: stretch;
+}
+
+.section-3-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+    flex-wrap: wrap; 
+}
+
+.section-3-list {
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    flex: 1 0 0;
+
+    border-radius: 40px;
+    background: #FFF;
+}
+
+/********* list *********/
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+    margin: 0px;
+}
+
+.list-item-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-item-img img {
+    max-width: 80px;
+    max-height: 80px;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+}
+
+.list-item-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    flex: 1 0 0;
+}
+
+/********* H3 *********/
+
+h3 {
+    align-self: stretch;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;  
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    margin: 0;
+}
+
+
+
+
+/********* Section 4 *********/
+/********* Section 4 *********/
+/********* Section 4 *********/
+
+.section-4 {
+    display: flex;
+    padding: 0px 80px;
+    justify-content: center;
+    gap: 40px;
+    align-self: stretch;
+}
+
+.section-4-content {
+    display: flex; 
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex: 1 0 0; 
+ 
+    border-radius: 40px;
+    background: #FFF;
+}
+
+.section-4-content h2 {
+    display: flex;
+    align-items: center; 
+}
+
+@media (max-width: 1140px) {
+    .section-4-content {
+        flex-wrap: wrap; 
+        width: 100%;
+    }
+   .section-4-content h2 {
+       width: 100%;
+    }
+}
+
+.section-4-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;   
+    gap: 30px;
+    flex: 1 0 0;
+}
+
+.section-4-item img {
+    flex: 1;
+    max-width: 192px; 
+    height: 100%; 
+    aspect-ratio: 1/1; 
+    object-fit: cover; 
+}
+
+.section-4-item h3 {
+    text-align: center;
+}
+
+
+
+
+/********* Section 6 / Footer *********/
+/********* Section 6 / Footer *********/
+/********* Section 6 / Footer *********/
+
+.footer  {
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    padding: 80px;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;    
+
+    border-radius: 80px 80px 0px 0px;
+    background: #000;
+}
+
+.footer-content p {
+    color: white;
+    margin: 0px;
+    }
+
+.footer-left, .footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-left {
+    align-items: flex-start;
+    text-align: left;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.footer-right-text {
+    text-align: right;
+
+}
